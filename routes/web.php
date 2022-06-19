@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-Route::resource('fumetti','ProductController');
+    return view('home');
+})->name('home');
+Route::resource('products','ProductController');
